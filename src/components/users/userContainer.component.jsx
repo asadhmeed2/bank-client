@@ -6,7 +6,7 @@ function UserContainer() {
   const [users, setUsers] = React.useState([]);
   React.useEffect(() => {
     (() => {
-      axios.get("http://localhost:5000/users").then((response) => {
+      axios.get("https://bank-server-demo.herokuapp.com/users").then((response) => {
         setUsers(response.data);
       });
     })();

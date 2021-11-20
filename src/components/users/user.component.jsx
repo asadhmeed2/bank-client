@@ -22,9 +22,8 @@ function User({ id, passportId, cash, credit }) {
       return;
     }
     axios
-      .put("http://localhost:5000/transfer", requestData)
+      .put("https://bank-server-demo.herokuapp.com/transfer", requestData)
       .then((response) => {
-        console.log(response);
         const tempUser = { ...user };
         tempUser.cash -= amount;
       })
@@ -43,7 +42,7 @@ function User({ id, passportId, cash, credit }) {
       return;
     }
     axios
-      .put(`http://localhost:5000/${transactionType}`, requestData)
+      .put(`https://bank-server-demo.herokuapp.com/${transactionType}`, requestData)
       .then((response) => {
         const tempUser = { ...user };
         if (transactionType === "deposit") {

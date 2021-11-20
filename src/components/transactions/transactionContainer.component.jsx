@@ -13,7 +13,6 @@ function TransactionContainer({
   });
   const [amount, setAmount] = React.useState(0);
   const listHandler = (type) => {
-    console.log(transactionType);
     setTransactionType(type);
     {
       type === "hide" && (() => hideMessage())();
