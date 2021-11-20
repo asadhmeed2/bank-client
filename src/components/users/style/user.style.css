@@ -1,0 +1,17 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    
+    
+}
+.userWarpper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    padding: 1.5vmax;
+    gap: 2vw;
+    background:rgba(11, 11, 14, 0.3);
+    height: 35vh;
+    width: 25vw;
+}
